@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1441px) {
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  background-color: rgb(172, 225, 238);
+  border-radius: 25px;
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  gap: 30px;
+}
+
+.conteudo-prinicipal {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.secao-informacao {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
+.secao-informacao h1 {
+  font-size: 62px;
+  font-family: "Slackey", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.secao-informacao p {
+  font-family: "Red Hat Display", serif;
+  font-size: 22px;
+}
+
+.secao-entrada-dados {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.secao-entrada-dados input {
+  width: 80px;
+  height: 60px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.secao-entrada-dados label {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.secao-entrada-dados div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secao-botoes {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao {
+  width: 200px;
+  height: 40px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao-ativo {
+  background-color: rgb(29, 29, 158);
+  color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.botao-ativo:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.botao-desativado {
+  background-color: gray;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.conteudo-saida-dados {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.conteudo-saida-dados h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo-saida-dados p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  width: 500px;
+  max-height: 300px;
+  padding: 50px;
+  word-wrap: break-word;
+  overflow: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1225px) {
+  .main {
+    width: 95%;
+    height: 90%;
+  }
+
+  .secao-informacao h1 {
+    font-size: 42px;
+  }
+
+  .conteudo-prinicipal {
+    width: 60%;
+  }
+
+  .conteudo-saida-dados {
+    width: 40%;
+  }
+
+  .botao {
+    width: 200px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 1224px) and (min-width: 769px) {
+  .main {
+    width: 95%;
+    height: 90%;
+  }
+
+  .secao-informacao h1 {
+    font-size: 32px;
+  }
+
+  .conteudo-prinicipal {
+    width: 50%;
+  }
+
+  .conteudo-saida-dados {
+    width: 50%;
+  }
+
+  .botao {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 601px) {
+  html,
+  body {
+    height: auto;
+    width: auto;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .conteudo-prinicipal {
+    width: 100%;
+  }
+
+  .conteudo-saida-dados {
+    width: 100%;
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 551px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .conteudo-prinicipal {
+    width: 100%;
+  }
+
+  .conteudo-saida-dados {
+    width: 100%;
+    padding: 50px 0;
+  }
+
+  .botao {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html,
+  body {
+    display: block;
+  }
+
+  .main {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+  }
+
+  .conteudo-prinicipal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .secao-informacao h1 {
+    font-size: 24px;
+    padding-top: 20px;
+  }
+
+  .secao-entrada-dados {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .secao-entrada-dados div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .conteudo-saida-dados {
+    width: auto;
+  }
+
+  .secao-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .secao-botoes button {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .conteudo-saida-dados p {
+    width: 300px;
+    max-height: 300px;
+    padding: 50px;
+    word-wrap: break-word;
+    overflow: auto;
+    text-align: center;
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Sorteador de Números</title>
+    <meta
+      name="description"
+      content="Gere números aleatórios de forma rápida e fácil! Escolha a quantidade desejada e defina o intervalo para obter resultados personalizados em segundos. Ideal para sorteios, estatísticas e muito mais."
+    />
+
+    <meta name="author" content="Gustavo Canhan" />
+
+    <link rel="icon" href="" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Great+Vibes&family=Host+Grotesk&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Slackey&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <section class="conteudo-prinicipal">
+        <div class="secao-informacao">
+          <h1>Sorteador de Números Aleatórios</h1>
+          <p>
+            Gere números aleatórios de forma rápida e fácil! Escolha a
+            quantidade desejada e defina o intervalo para obter resultados
+            personalizados em segundos. Ideal para sorteios, estatísticas e
+            muito mais.
+          </p>
+        </div>
+        <div class="secao-entrada-dados">
+          <div>
+            <label for="quantidade">Quantidade de números para sortear:</label>
+            <input type="text" name="quantidade" id="quantidade" />
+          </div>
+          <div>
+            <label for="minimo">Do número:</label>
+            <input type="text" name="minimo" id="minimo" />
+          </div>
+          <div>
+            <label for="maximo">Até o número:</label>
+            <input type="text" name="maximo" id="maximo" />
+          </div>
+        </div>
+        <div class="secao-botoes">
+          <div>
+            <button
+              onclick="sortear()"
+              id="botao-sortear"
+              class="botao botao-ativo"
+            >
+              Sortear
+            </button>
+            <button
+              onclick="limpar()"
+              id="botao-limpar"
+              class="botao botao-ativo"
+            >
+              Limpar
+            </button>
+            <button
+              onclick="reiniciar()"
+              id="botao-reiniciar"
+              class="botao botao-desativado"
+            >
+              Reiniciar
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="conteudo-saida-dados">
+        <h2>Números sorteados:</h2>
+        <p id="resultado">0</p>
+      </section>
+    </main>
+  </body>
+</html>
