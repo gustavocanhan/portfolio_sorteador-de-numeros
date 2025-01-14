@@ -22,11 +22,6 @@ O projeto combina interatividade e simplicidade, oferecendo uma interface intuit
 3. 🔧 Defina o intervalo e a quantidade desejada de números no formulário.
 4. 🎉 Clique no botão para gerar os números aleatórios.
 
-## 🚀 Melhorias Futuras
-- 📂 Permitir exportar os números gerados em um arquivo.
-- 🎨 Adicionar opções de temas (claro/escuro).
-- 🛠️ Otimizar o código JavaScript para suportar grandes intervalos de números.
-- 
 ## 👤 Autor
 - **Nome**: Gustavo Canhan
 - **E-mail**: gustavocanhan@gmail.com
